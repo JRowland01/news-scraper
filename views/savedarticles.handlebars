@@ -1,6 +1,7 @@
 <div class="container">
 
     <div class="header clearfix">
+
             <ul class="nav nav-pills float-left">
                 <li class="nav-item">
                     <a class="nav-link link" href="/">Home </a>
@@ -12,13 +13,19 @@
    </div>
 
    <div class="jumbotron">
-  <h1 class="display-3">Huffington Post News Scraper</h1>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="/scrape" role="button">View the Latest Articles</a>
-  </p>
+  <h1 class="display-3">Saved Articles</h1>
+  {{!--<p class="lead">
+    
+  </p>--}}
 </div>
+{{!--If no saved articles exist then display the following ptag info--}}
+  <div class="row">
+    {{#unless result.length}}
+    <p>There are no saved articles.</p>
+    {{/unless}}
+  </div>
 
-  {{!--Populates the handlebars injection points with the scraped titles,
+{{!--Populates the handlebars injection points with the Huffington Post's scraped titles,
     links, and article snippets.--}} {{#each result}}
     <div class="panel panel-info">
       <div class="panel-heading">
@@ -34,7 +41,7 @@
             </a>
             <br>
             <a href="/articles/{{this._id}}" class="btn btn-success">Comment</a>
-            <a href="/save/{{this._id}}" class="btn btn-success">Save Article</a>
+            <a href="/unsave/{{this._id}}" class="btn btn-success">Delete from Saved Article</a>
         </div>
         </div>
     </div>

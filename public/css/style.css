@@ -1,0 +1,85 @@
+body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
+  font-family: 'Ramabhadra', sans-serif;
+
+}
+
+.display-3 h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
+  font-family: 'Ramabhadra', sans-serif;
+  font-weight:bolder;
+
+}
+
+h4.card-header {
+  font-family: 'Ramabhadra', sans-serif;
+  color: #5E5E5F;
+}
+
+p.snippet-text {
+  font-family: 'Ramabhadra', sans-serif;
+  color: #6b7c93;
+}
+
+a.btn.btn-primary--default {
+  color: #fff;
+  background: #6772e5;
+}
+
+h1.display-3 {
+  font-family: 'Ramabhadra', sans-serif;
+  color: #32325d;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+a.btn.btn-lg.btn-success {
+  color: #7795f8;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+}
+
+a.btn.btn-lg.btn-success {
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: 18px; 
+}
+
+a.nav-link.active,
+.nav-pills .nav-link.active {
+  color: #fff;
+  background-color: #9ACD32;
+}
+
+.jumbotron .btn {
+  padding: .50em 1.5em;
+  font-size: 1.0em;
+}
+
+ .jumbotron {
+    border-bottom: 0;
+  }
+
+.btn-primary {
+  color: #fff;
+  background-color: #6772e5;
+  border-color: #6772e5;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #7795f8;
+  border-color: #7795f8;
+}
+
+
+ 
