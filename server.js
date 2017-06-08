@@ -6,6 +6,13 @@ var mongoose = require("mongoose");
 
 mongoose.Promise = Promise;
 
+if(process.env.MONGODB_URI){
+    mongoose.connect(process.env.MONGODB_URI);
+} else{
+    mongoose.connect("mongodb://localhost/newsdb");
+}
+
+
 var app = express();
 var PORT = process.env.PORT || 4500;
 
